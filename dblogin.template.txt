@@ -2,4 +2,4 @@ host: localhost
 user: domjudge
 password: domjudge
 database: domjudge
-port: 3306
+port: 13307
