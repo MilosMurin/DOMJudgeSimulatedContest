@@ -5,7 +5,7 @@ For this simulation to work, you need a jury account on the DOMJudge the contest
 ## First time setup
 ### DOMJudge
 
-#### Choose a language that the simulated teams will be using i.e. f95 fortran
+#### Choose a language that the simulated teams will be using and that will not be used be real competitors i.e. f95 fortran
  - Disable judging for that language in DOMJudge settings - so that judgehosts do not crash on 404s because the fake submissions do not have any code associated with them
 
 #### Insert dummy teams
