@@ -23,7 +23,7 @@ class Domjudge:
         self.session.cookies.set('domjudge_cid', str(cid))
 
     def login(self):
-        login_url = "http://158.193.146.188/login"
+        login_url = f"http://{self.login_info.url}/login"
 
         login_data = self.login_info.get_login_data()
 
@@ -44,7 +44,7 @@ class Domjudge:
         self.session.cookies.set('csrftoken', csrf)
 
     def call_update(self, submission_id):
-        update_url = f"http://158.193.146.188/jury/submissions/{submission_id}/update-status"
+        update_url = f"http://{self.login_info.url}/jury/submissions/{submission_id}/update-status"
 
         response = self.session.post(update_url, data={ 'valid': 'true' })
 
